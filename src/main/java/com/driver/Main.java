@@ -5,6 +5,8 @@ public class Main {
     int typesOffrutis;
     int numofdefectivefruits;
     int numofdefItem;
+	doubtle x;
+	  doube y;
     
      public int product(int x, int y) 
        {
@@ -21,8 +23,8 @@ public class Main {
          
   }
 	  public double product(double x, double y) {
-		  typesOffrutis=x;
-         numofdefItem=y;
+		  this.x=x;
+         this.y=y;
          
 		  
 	  }
@@ -32,7 +34,7 @@ public class Main {
   {
 		product p=new product(10,15);
 	  product p=new product(10,15,10);
-	  product p=new product(10d,15d);
+	  product p=new product(10,15);
 
 	  System.out.print(p);
 	  
