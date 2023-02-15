@@ -1,30 +1,43 @@
 package com.driver;
 
 public class Main {
-  class roduct{
-    int typesOffrutis;
-    int numofdefectivefruits;
-    int numofdefItem;
-	doubtle x;
-	  doube y;
+  class product{
+    int x;
+    int y;
+    int z;
+	double xa;
+	double ya;
+
+	  product(int x,int y){
+		  this.x=x;
+		  this.y=y;
+	  }
+	  product(int x,int y,int z)
+	  {
+		  this(x,y);
+		  this.z=z;
+	  }
+
+	  product(double xa,double ya){
+		  this.xa=xa;
+		  this.ya=ya;
+	  }
     
      public int product(int x, int y) 
        {
-         typesOffrutis=x;
-         numofdefItem=y;
+         return x+y;
          
          
   }
 	   public int product(int x, int y,int z) 
        {
-         typesOffrutis=x;
-         numofdefItem=y;
+        return x+y+z;
          
          
   }
 	  public double product(double x, double y) {
-		  this.x=x;
-         this.y=y;
+		  
+			return xa+ya;
          
 		  
 	  }
@@ -32,11 +45,12 @@ public class Main {
   
   public static void main(String args[])
   {
-		product p=new product(10,15);
-	  product p=new product(10,15,10);
-	  product p=new product(10,15);
+		product p=new product();
+	  
 
-	  System.out.print(p);
+p.product(10,15);
+p.product(10,14,15);
+p.product(10d,15d);
 	  
 	  
 	  
